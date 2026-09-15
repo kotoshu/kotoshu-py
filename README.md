@@ -125,7 +125,7 @@ stored anywhere):
 
 | Distribution | Repository | Workflow | Tag | Status |
 |---|---|---|---|---|
-| `kotoshu` | kotoshu/kotoshu-python | `release-pypi.yml` | `kotoshu-v*` | wired here |
+| `kotoshu` | kotoshu/kotoshu-py | `release-pypi.yml` | `kotoshu-v*` | wired here |
 | `kotoshu-native` | kotoshu/kotoshu-rs | `release-pypi.yml` | `kotoshu-native-v*` | wired in kotoshu-rs |
 
 Releasing (owner actions): set the version, merge to main, push the tag.
