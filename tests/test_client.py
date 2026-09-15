@@ -62,3 +62,9 @@ def test_error_on_missing_text(client):
     with pytest.raises(KotoshuError):
         # Bypass client-side validation to hit the 400 path
         client._post("/v1/check", {"language": "en"})
+
+
+def test_version_reports_engine(client):
+    info = client.version()
+    assert set(info) >= {"server", "kotoshu"}
+    assert info["kotoshu"].startswith("1.")

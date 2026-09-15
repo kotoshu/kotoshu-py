@@ -95,6 +95,10 @@ class Client:
     def languages(self) -> list[str]:
         return self._get("/v1/languages").get("cached", [])
 
+    def version(self) -> dict[str, Any]:
+        """Server, engine, and Ruby versions (``GET /v1/version``)."""
+        return self._get("/v1/version")
+
     def check(
         self,
         text: str,
